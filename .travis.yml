@@ -5,7 +5,7 @@ before_install:
 
 install:
   # Install conan
-  - pip install --user -q conan
+  - sudo -E pip install conan
   # Automatic detection of your arch, compiler, etc.
   - conan user
 
