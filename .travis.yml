@@ -2,9 +2,9 @@
 env:
    global:
      - CONAN_REFERENCE: "hello/0.1.0"
-#     - CONAN_USERNAME: "user"
-#     - CONAN_LOGIN_USERNAME: "user"
-#     - CONAN_CHANNEL: "channel"
+     - CONAN_USERNAME: "user"
+     - CONAN_LOGIN_USERNAME: "user"
+     - CONAN_CHANNEL: "channel"
      
 linux: &linux
    os: linux

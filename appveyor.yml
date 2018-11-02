@@ -4,9 +4,9 @@ environment:
     PYTHON: "C:\\Python37"
 
     CONAN_REFERENCE: "hello/0.1.0"
-#    CONAN_USERNAME: "user"
-#    CONAN_LOGIN_USERNAME: "user"
-#    CONAN_CHANNEL: "channel"
+    CONAN_USERNAME: "user"
+    CONAN_LOGIN_USERNAME: "user"
+    CONAN_CHANNEL: "channel"
     
     matrix:
         - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
