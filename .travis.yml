@@ -1,7 +1,14 @@
 language: cpp
 
+install:
+  # Install conan
+  - pip install --user -q conan
+  # Automatic detection of your arch, compiler, etc.
+  - conan user
+
 script:
-    - mkdir .build && cd .build
-    - cmake ..
-    - cmake --build . --target all
-    - ./hello
+  - mkdir build && cd build
+  - conan install .. --build=missing
+  - cmake ..
+  - cmake --build .
+  - ./bin/test_hello

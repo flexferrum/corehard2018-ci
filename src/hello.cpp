@@ -1,6 +1,7 @@
-#include <iostream>
+#include "hello/hello.h"
 
-int main()
+
+namespace hello
 {
-	std::cout << "Hello World!" << std::endl;
+std::string GetGreetingMessage() {return "Hello World!";}
 }
